@@ -3,7 +3,7 @@ import "./Coin.css";
 import { Button } from "web3uikit";
 
 
-function Coin({perc, setPerc, token}) {
+function Coin({perc, setPerc, token, setModalToken, setVisible }) {
   const [color, setColor] = useState();
 
   useEffect(() => {
@@ -54,9 +54,12 @@ function Coin({perc, setPerc, token}) {
             type="button"
           />
         </div>
+
         <div className="votes">
             <Button
             onClick={()=>{
+              setModalToken(token)
+              setVisible(true);
             }}
             text="INFO"
             theme="translucent"
