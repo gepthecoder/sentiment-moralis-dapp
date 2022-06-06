@@ -4,11 +4,11 @@ import "./Coin.css";
 
 function Coin() {
 
-
-
   return (
     <>
-      
+      <div>
+        Coin go here
+      </div>
     </>
   );
 }
