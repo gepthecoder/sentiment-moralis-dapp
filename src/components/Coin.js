@@ -12,7 +12,11 @@ function Coin({perc, setPerc, token}) {
         </div>
         <div className="circle">
           <div className="wave"
-          
+            style={{
+              marginTop: `${100 - perc}%`,
+              boxShadow: `0 0 20px green`,
+              backgroundColor: "green",
+            }}
           >
           </div>
           <div className="percentage">
