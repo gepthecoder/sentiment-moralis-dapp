@@ -26,6 +26,13 @@
   font-weight: 600;
 }
 
+.symbol {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  opacity: 0.2;
+}
+
 .votes {
     display: flex;
     justify-content: center;
